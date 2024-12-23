@@ -2,12 +2,10 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies
-      - npm install
+      - echo "No dependencies to install for HTML project"
   build:
     commands:
-      - echo Running build
-      - npm run build
-  post_build:
-    commands:
-      - echo Build completed
+      - echo "Build phase: copying files"
+artifacts:
+  files:
+    - '**/*' # Include all files and folders in the artifact
